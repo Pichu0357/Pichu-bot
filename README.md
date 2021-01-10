@@ -1,5 +1,5 @@
 # Pichu-bot
-We are making a Dicord bot using Hata API Wrapper
+We are making a Discord bot using Hata API Wrapper
 
 
 ## About-Hata
