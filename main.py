@@ -25,7 +25,7 @@ async def message_create(client, message):
         await client.message_create(message.channel, 'pong')
 
 for commands in os.listdir("./commands/"):
-    if (file.endswith('.py')):
+    if (commands.endswith('.py')):
         with open(f'commands/{commands}') as rk:
             exec(rk.read())
 
