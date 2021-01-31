@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 Token = os.environ.get('Token')
-Pichu = Client(Token)
+Pichu = Client(Token, application_id=os.environ.get('APPLICATION_ID'))
 setup_ext_commands(Pichu, '$')
 setup_ext_slash(Pichu, immediate_sync= True)
 
