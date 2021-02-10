@@ -26,5 +26,6 @@ real stuff:
 
 
 ## Requirements
-- [Hata](https://github.com/HuyaneMatsu/hata) 
+- [Hata](https://github.com/HuyaneMatsu/hata)
+- [dotenv](https://pypi.org/project/python-dotenv/) 
 - Python >= 3.9
