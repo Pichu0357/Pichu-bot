@@ -6,6 +6,7 @@ import os
 
 # loading the .env file
 load_dotenv()
+
 Token = os.environ.get('Token')
 APPLICATION_ID = os.environ.get('APPLICATION_ID')
 GUILD = Guild.precreate(os.environ.get('GUILD_ID'))
