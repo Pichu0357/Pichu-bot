@@ -1,6 +1,6 @@
 from hata import sleep, Embed, Color, Emoji
 from random import random, choice
-import re
+import os, re
 
 # emotes
 CAT_FISH = Emoji.precreate(os.environ.get('CAT_FISH'))
