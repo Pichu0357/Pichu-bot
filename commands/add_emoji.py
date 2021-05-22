@@ -1,6 +1,7 @@
 from hata import Permission
 from hata.ext.commands import checks
 
+
 async def PERMISSION_CHECK_HANDLER(client, message, command, check):
     permission_names = ' '. join(permission_name.replace('_', ' ') for permission_name in check.permissions)
     text = f'You must have {permission_names} permission to invoke `{command.display_name}` command.'
@@ -14,7 +15,7 @@ CHECK_MANAGE_EMOJIS = checks.has_guild_permissions(
 
 
 @Pichu.commands(checks=CHECK_MANAGE_EMOJIS)
-async def add_emoji(client, message, emoji:'emoji', emoji_name: str=None):
+async def add_emoji(client, message, emoji: 'emoji', emoji_name: str = None):
     guild = message.guild
     
     if guild is None:
@@ -34,4 +35,3 @@ async def add_emoji(client, message, emoji:'emoji', emoji_name: str=None):
     added_emoji = await client.emoji_create(guild, emoji_name, emoji_icon)
 
     return f'{added_emoji} has been added.'
-
