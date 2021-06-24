@@ -5,6 +5,9 @@ import os
 NEKOGIRL_KISS = Emoji.precreate(os.environ.get("NEKOGIRL_KISS"))
 NEKOGIRL_COLOR = Color.from_html('#FFB6C1')
 
+BASE_URL = 'https://nekos.life/api/v2'
+HTTP = Pichu.http
+
 @Pichu.interactions(is_global=True)
 async def nekogirl(client, event):
     """wanna see nekogirls? OwO"""
